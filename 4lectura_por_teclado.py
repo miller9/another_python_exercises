@@ -1,4 +1,5 @@
 def lectura():
+
 	print ("Se usa la instrucción input() que lee y devuelve una cadena:")
 	print ("---")
 	print ("Ingrese su nombre:")
@@ -45,18 +46,8 @@ def lectura():
 	value = float( input("Introduce un número decimal o entero: ") )
 	print ("El numero ingresado es convertido a tipo float: "+str(value))
 	print ("---")
-
-
-
-
+	print ("---")
 
 lectura()
-
-
-
-
-
-
-
 
 
