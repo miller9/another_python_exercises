@@ -22,6 +22,8 @@ def sum_of_rows():
 
 	print ("---")
 	print ("This matrix adds each row and stores the result in the last value of each row:")
+	print ("The matrix starts like this	: ")
+	print (matriz)
 	print ("---")
 	print ("Without Slicing: ")
 	matriz_b =     [[1,1,1, (matriz[0][0] + matriz[0][1] + matriz[0][2])] , 
@@ -32,6 +34,12 @@ def sum_of_rows():
 	i=0
 	j=0
 	print ("Size of the matrix: "+str(len(matriz_b)))
+	print ("---")
+	print ("The matrix is: ")
+	print (matriz_b)
+	print ("---")
+	print ("---")
+	print ("Looking another way to print the matrix: --> Have to fix it..")
 	while i<len(matriz_b):
 		#print ('['+str(matriz_b[i][j])+']',end="")	
 		while j<len(matriz_b):
