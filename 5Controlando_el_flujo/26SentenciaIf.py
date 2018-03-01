@@ -84,7 +84,7 @@ def if_sent():
 	if True:
 		pass
 	print ("---")
-
+	print ("---")
 
 if_sent()
 
