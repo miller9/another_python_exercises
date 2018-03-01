@@ -33,6 +33,9 @@ def arithmetic_menu():
 		if (option==4):
 			print ("Bye bye!")
 			break
+		else:
+			print ("Invalid Option, please try again!")	# If the value is a String, the program breaks
+			print ()		
 	print ("---")
 
 
