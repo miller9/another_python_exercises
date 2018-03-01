@@ -38,7 +38,7 @@ def opera_logico():
 	print ("len(c) >= 5 and c[0]=='H' ?")
 	print (len(c) >= 5 and c[0]=='H')
 	print ("---")
-	print ("Or ==> Si tan solo una sentencia es verdadera, retorna True:")
+	print ("Or ==> Disyunción Lógica: Si tan solo una sentencia es verdadera, retorna True:")
 	print ("True or True ?")
 	print (True or True)
 	print ("True or False ?")
