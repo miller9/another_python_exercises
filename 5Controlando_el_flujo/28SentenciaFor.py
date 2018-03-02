@@ -50,6 +50,17 @@ Para asignar un nuevo valor a los elementos de una lista mientras la recorremos,
 #		cadena[i] = "*"
 	print ("---")
 	print ("")
+
+"""	for numero in a:
+		if a[index]==b[cont]:
+			c[index]=c+list(a[index])
+			print ("lo que hay acá es:", c[index])			
+			cont+=1
+		index+=1
+	print ("New list is: 	", c)
+	print ("---")
+"""
+
 	print ("Sin embargo siempre podemos generar una nueva cadena:")
 	print ("cadena = ",cadena)	
 	cadena2 = ""
