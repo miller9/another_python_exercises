@@ -2,7 +2,6 @@
 import sys
 import random
 
-
 def a():
 	ans = True
 	print ()
