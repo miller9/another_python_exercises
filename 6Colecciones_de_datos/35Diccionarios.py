@@ -2,9 +2,9 @@ def diccionarios():
 
 	print ("---")
 	print ("""
-	Los diccionarios
+	Los diccionarios:
 
-	Son junto a las listas las colecciones más utilizadas. Se basan en una estructura mapeada donde cada elemento de 
+	Son junto a las listas, las colecciones más utilizadas. Se basan en una estructura mapeada donde cada elemento de 
 	la colección se encuentra identificado con una clave única. Por tanto, no puede haber dos claves iguales. 
 	En otros lenguajes se conocen como arreglos asociativos.
 
@@ -107,7 +107,7 @@ def diccionarios():
 	print ()
 	print ("personajes: 	", personajes)
 	print ()
-	print ("Recorrer y mostar el diccionario completo:")
+	print ("Recorrer y mostar lista que almacena el diccionario completo:")
 	print ()
 	for x in personajes:
 		print(x['Nombre'], x['Clase'], x['Raza'])
