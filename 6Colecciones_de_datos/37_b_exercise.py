@@ -25,7 +25,7 @@ def b():
 	personajes.append(p_guerrero)
 	personajes.append(p_arquero)
 	print ("Los personajes	:", personajes)
-	# Ciclo para recorrer y ajustar los personajes
+	# Ajustar los personajes
 	print ()
 	p_caballero['vida']	= ( p_guerrero['vida']*2 )
 	p_caballero['defensa']	= ( p_guerrero['defensa']*2 )
@@ -37,41 +37,12 @@ def b():
 	p_arquero['alcance']	= ( p_guerrero['alcance']*2 )
 	print ("Los personajes	:", personajes)
 	print ()
-
+# 	Ciclo para recorrer y ajustar los personajes
 #	for c,v in personajes:
 #		if (c==p_caballero and ):
 #			print (c,v)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 b()
-
-
-
-
-
-
 
 
 
