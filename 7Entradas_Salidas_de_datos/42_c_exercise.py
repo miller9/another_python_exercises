@@ -23,16 +23,27 @@ números y viceversa
 
 	""")
 import sys
-if (len(sys.argv)==2):
-	print ("\nLos argumentos ingresados son: ",(sys.argv))
-	cad1=str(sys.argv[1])
-	print ("cad1 es: ",cad1)
-	for caracter in cad1:
-		ent1=int(cad1)
-		last=ent1
-		print("{:04d}".format(10))
+
+if len(sys.argv) == 2:
+    numero = int(sys.argv[1])
+    if numero < 0 or numero > 9999:
+        print("Error - Número es incorrecto")
+        print("Ejemplo: descomposicion.py [0-9999]")
+    else:
+        # Aqui va la lógica
+        cadena = str(numero)
+        longitud = len(cadena)
+
+        print ("\nEste script imprime el valor ingresado separado por unidades, decenas, centenas, etc: ")
+        print ()
+        for i in range(longitud):
+            print( "{:04d}".format( int(cadena[longitud-1-i]) * 10 ** i ))
+    print ()
 
 else:
-	print ("""\n Debe ingresar 2 argumentos:
-		1. Nombre del script
-		2. Un numero entero positivo""")
+    print ("\n***************************************************")
+    print ("Error, introduce los 2 argumentos:")
+    print ("Ejemplo: nombre_del__script.py     'numero entero1'")
+    print ("Ejemplo: python 42_c_2_exercise.py '5'             ")
+    print ("***************************************************")
+    print ()

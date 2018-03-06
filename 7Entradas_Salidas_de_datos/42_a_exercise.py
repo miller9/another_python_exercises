@@ -11,35 +11,15 @@ def a42():
 
 		""")
 	resultado = "Hola Mundo"
-	print ("{:^20}".format(resultado))
+	print ("{:>20}".format(resultado))
 	print ("{:.3}".format(resultado))
-	print ("{:^20.1}".format(resultado))
+	print ("{:^20.2}".format(resultado))
 	num1 = 150
 	num2 = 7887
 	num3 = 20.02
 	print("\n{:05d}".format(num1))
 	print("{:7d}".format(num2))
 	print("{:07.3f}".format(num3))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	print ()
 
 a42()
