@@ -23,6 +23,7 @@ print ('	print("{}/{}={}".format(n,m,n/m))')
 # print("{}/{}={}".format(n,m,n/m))
 
 
+
 print ()
 print ("""\nCreando la excepción - Bloques try y except:
 Para prevenir el error, debemos poner el código propenso a error dentro de un bloque try 
@@ -35,6 +36,7 @@ try:
 	print ()
 except:
 	print("Ha ocurrido un error, introduce bien el número")
+
 
 
 print ()
@@ -53,10 +55,12 @@ while(True):
         print("Ha ocurrido un error, introduce bien el número")
 
 
+
 print ()
 print ("""\n
 Bloque else en excepciones:
-Es posible encadenar un bloque else después del except para comprobar el caso en que todo funcione correctamente (no se ejecuta la excepción).
+Es posible encadenar un bloque else después del except para comprobar el caso en que todo funcione correctamente 
+(no se ejecuta la excepción).
 El bloque else es un buen momento para romper la iteración con break si todo funciona correctamente:
 	""")
 while(True):
@@ -69,6 +73,7 @@ while(True):
 	else:
 		print("Todo ha funcionado correctamente")
 		break  # Importante romper la iteración si todo ha salido bien
+
 
 
 print ()
@@ -91,9 +96,3 @@ while(True):
 
 print ()
 print ()
-
-
-
-
-
-
