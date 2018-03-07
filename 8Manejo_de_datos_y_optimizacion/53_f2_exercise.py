@@ -19,9 +19,9 @@ def separar(lista):
 	for l,v in enumerate(lista):
 		if (lista[l]%2==0):
 			#print ("l es:",[l])
-			pares+=str(v)			# crea lista de strings con los numeros pares
+			pares.append(v)				# crea lista de numeros enteros pares
 		else:
-			impares+=str(v)			# crea lista de strings con los numeros impares ---> lista de enteros?
+			impares.append(v)			# crea lista de numeros enteros impares
 	# return pares, impares
 	print ("La lista de pares es 	:",pares)
 	print ("La lista de impares es  :",impares)
