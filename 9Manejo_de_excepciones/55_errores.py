@@ -1,4 +1,5 @@
 print ("""
+
 Provocando errores:
 
 Errores de sintaxis (SyntaxError)

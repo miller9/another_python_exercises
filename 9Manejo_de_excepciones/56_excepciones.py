@@ -1,4 +1,5 @@
 print ("""
+
 Las excepciones:
 
 Son bloques de código excepcionales que nos permiten continuar con la ejecución 
