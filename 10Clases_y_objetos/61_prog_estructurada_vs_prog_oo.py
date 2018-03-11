@@ -1,4 +1,4 @@
-print ("Ejemplo de implementación con Programación Estructurada")
+print ("Ejemplo de implementación con Programación Estructurada:")
 print ("""
 clientes= [
     {'Nombre': 'Hector',  'Apellidos':'Costa Guzman',      'dni':'11111111A'},
