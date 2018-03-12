@@ -3,7 +3,6 @@ print ("""
 Crea una excepción para evitar que el programa se bloquee 
 y además explica en un mensaje al usuario la causa y/o solución:
 	""")
-
 # lista = [1, 2, 3, 4, 5]
 # lista[10]
 

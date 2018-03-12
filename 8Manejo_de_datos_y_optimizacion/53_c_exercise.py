@@ -10,9 +10,12 @@ Comprueba la relación entre los números: '5 y 10', '10 y 5' y '5 y 5'
 	""")
 
 def relacion(a,b):
-	if a>b: return 1
-	if a<b: return -1
-	if a==b: return 0
+	if a > b: 
+		return 1
+	elif a < b: 
+		return -1
+	else:
+		return 0
 
 
 # relacion(5,10)

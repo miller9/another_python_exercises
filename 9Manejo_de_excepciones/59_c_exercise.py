@@ -11,10 +11,20 @@ colores['blanco']
 
 colores = { 'rojo':'red', 'verde':'green', 'negro':'black' } 
 try:
+	x=input("\nIngrese el color que quiere buscar: ")
+	if x in colores:
+		print ("\nEl color que buscas pertenece al diccionario!: ")
+except KeyError:
+	if x not in colores:
+		print ("\nKeyError --> En el diccionario NO hay clave ",x," Por favor ingrese una clave válida:")
+		print ("Claves válidas: 'rojo', 'verde', 'negro'.")
+
+"""
+try:
 	colores['blanco']
 except KeyError:
-	print ("En el diccionario NO hay clave 'blanco', ingrese una clave válida:")
-	print ("Claves válidas: 'rojo', 'verde', 'negro'.")
+	print ("La clave ingresada no está en el diccionario.")
+"""
 
 print ()
 print ()

@@ -12,6 +12,7 @@ try:
 	resultado = 15 + "20"
 except TypeError:
 	print ("No se puede sumar un entero con una cadena")
+	print ("Solo es posible sumar datos del mismo tipo")
 	print ("Transforma la cadena a numero --> int(20)")
 
 print ()

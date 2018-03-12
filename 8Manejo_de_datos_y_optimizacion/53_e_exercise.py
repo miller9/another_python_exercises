@@ -13,18 +13,16 @@ Comprueba el resultado de recortar 15 entre los límites 0 y 10
 
 	""")
 
-def recortar(a,b,c):
+def recortar(numero,minimo,maximo):
 # a=numero a recortar
 # b=limite inferior
 # c=limite superior
-	if a<b: return b
-	if a>c: return c
-	else: return a
-
-
+	if numero < minimo: 
+		return minimo
+	if numero > maximo: 
+		return maximo
+	else: 
+		return numero
 
 print ("resultado:",recortar(15,0,10))
 print ()
-
-
-

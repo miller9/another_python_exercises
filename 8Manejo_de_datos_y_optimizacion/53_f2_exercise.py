@@ -22,7 +22,7 @@ def separar(lista):
 			pares.append(v)				# crea lista de numeros enteros pares
 		else:
 			impares.append(v)			# crea lista de numeros enteros impares
-	# return pares, impares
+	# return pares, impares				# Puedo hacer return de ambas listas así
 	print ("La lista de pares es 	:",pares)
 	print ("La lista de impares es  :",impares)
 
@@ -33,6 +33,7 @@ print ()
 numeros = [-12, 84, 13, 20, -33, 101, 9]
 print ("\nOtra lista: numeros = [-12, 84, 13, 20, -33, 101, 9]")
 separar(numeros)
+# pares, impares = separar(numeros)		# Tambien puedo llamar la función de esta forma
 print ()
 
 
