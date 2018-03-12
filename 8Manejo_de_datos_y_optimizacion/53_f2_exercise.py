@@ -1,12 +1,12 @@
 print ("""
-6) Realiza una función separar() que tome una lista de números enteros y devuelva dos listas ordenadas. 
-La primera con los números pares, y la segunda con los números impares:
+	6) Realiza una función separar() que tome una lista de números enteros y devuelva dos listas ordenadas. 
+	La primera con los números pares, y la segunda con los números impares:
 
-Por ejemplo:
+	Por ejemplo:
 
-pares, impares = separar([6,5,2,1,7])
-print(pares)   # valdría [2, 6]
-print(impares)  # valdría [1, 5, 7]
+	pares, impares = separar([6,5,2,1,7])
+	print(pares)   # valdría [2, 6]
+	print(impares)  # valdría [1, 5, 7]
 	""")
 
 def separar(lista):
@@ -35,5 +35,3 @@ print ("\nOtra lista: numeros = [-12, 84, 13, 20, -33, 101, 9]")
 separar(numeros)
 # pares, impares = separar(numeros)		# Tambien puedo llamar la función de esta forma
 print ()
-
-
