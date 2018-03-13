@@ -3,6 +3,7 @@ print ("Constructor y destructor:")
 print ("Redefinición de los métodos str() y len():")
 
 
+
 # Crear la clase con constructor, destructor, 
 # redefiniendo los métodos string y len
 class Pelicula:
