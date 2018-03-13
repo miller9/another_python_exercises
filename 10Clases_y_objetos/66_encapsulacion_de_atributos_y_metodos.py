@@ -21,3 +21,41 @@ print ("\nSi llamo el atributo privado --> 'e.__atributo_privado' --> lanza el s
 print ("AttributeError: 'Ejemplo' object has no attribute '__atributo_privado'")
 print (" ")
 print ()
+
+print ("\nSi llamo el método privado --> 'e.__metodo_privado()' --> tambien lanza error:")
+print ("AttributeError: 'Ejemplo' object has no attribute '__metodo_privado'")
+print (" ")
+print ()
+
+print ("---")
+print ("Cómo acceder:")
+print ("""
+	Internamente la clase sí puede acceder a sus atributos 
+	y métodos encapsulados, el truco consiste en crear sus equivalentes "publicos":
+	""")
+
+class Ejemplo:
+	__atributo_privado = "Soy un atributo inalcanzable desde fuera"
+	
+	def __metodo_privado(self):
+		print("Soy un método inalcanzable desde fuera")
+	
+	def atributo_publico(self):
+		return self.__atributo_privado
+	
+	def metodo_publico(self):
+		return self.__metodo_privado()
+
+
+e = Ejemplo()
+print ("Atributo público:")
+print(e.atributo_publico())
+
+print ("\nMétodo público:")
+# El metodo publico si se puede llamar así:
+e.metodo_publico()
+
+
+print ()
+print ("---")
+print ()
