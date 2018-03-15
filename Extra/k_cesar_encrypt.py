@@ -2,46 +2,43 @@
 
 
 def cesar_encrypt(n,message):
-  abc_list = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z']  
+  abc_list = 'A"a#B$b%C&c/D(d)E¡e!F¿f?G¡g!H\'h<I=i>J´j+K-k_L.l,M;m[N]n\\Ñ@ñ¨O^o~P{|}p°Q0q1R2r3S4s5T6t7U8u9VvWwXxYyZz'
+  print ("el tamaño de la cadena es: ", len(abc_list))
   temp = '?'
   msn_to_encrypt = ""
   i = 0
-  # j = 0
   while i < len(message):
     if (message[i] in abc_list):
       temp = message[i]
       x = 0
       while x < len(abc_list):
         if (temp == abc_list[x]):
-          msn_to_encrypt += abc_list[( x + n ) % 27]
+          msn_to_encrypt += abc_list[( x + n ) % 87]
           temp = ''
         else:
           x += 1
     else:
-      # j += 1
       msn_to_encrypt += message[i]
     i += 1
   print ("\nThe crypted message is:", msn_to_encrypt)
 
 
 def cesar_decrypt(n,message):
-  abc_list = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z']  
+  abc_list = 'A"a#B$b%C&c/D(d)E¡e!F¿f?G¡g!H\'h<I=i>J´j+K-k_L.l,M;m[N]n\\Ñ@ñ¨O^o~P{|}p°Q0q1R2r3S4s5T6t7U8u9VvWwXxYyZz'
   temp = '?'
   decrypted_msn = ""
   i = 0
-# j = 0
   while i < len(message):
     if (message[i] in abc_list):
       temp = message[i]
       x = 0
       while x < len(abc_list):
         if (temp == abc_list[x]):
-          decrypted_msn += abc_list[( x - n ) % 27]
+          decrypted_msn += abc_list[( x - n ) % 87]
           temp = ''
         else:
           x += 1
     else:
-    # j += 1
       decrypted_msn += message[i]
     i += 1
   print ("\nThe decrypted message is:", decrypted_msn)
@@ -58,7 +55,7 @@ while True:
   if option == 1:
     print ("\n---")
     print ("You choose to encrypt:")
-    n = int( input("Enter the 'key' value to encrypt --> number between 0 and 27: ") )
+    n = int( input("Enter the 'key' value to encrypt --> between 0 and 87: ") )
     message = str( input("Enter the message to encrypt: ") )
     cesar_encrypt(n,message)
     print ("---")
@@ -66,7 +63,7 @@ while True:
   elif option == 2:
     print ("\n---")
     print ("You choose to decrypt:")
-    n = int( input("Enter the 'key' value to decrypt --> number between 0 and 27: ") )
+    n = int( input("Enter the 'key' value to decrypt --> between 0 and 87: ") )
     message = str( input("Enter the message to encrypt: ") )
     cesar_decrypt(n,message)
     print ("---")
