@@ -1,5 +1,5 @@
 def cesar_des(n,message):
-    abc_list=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z']  
+    abc_list=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']  
     print ("el tamaño del abcdario es:",len(abc_list))
     temp='?'
     msn_cesar=""
@@ -16,7 +16,7 @@ def cesar_des(n,message):
         x=0
         while x<len(abc_list):
           if (temp==abc_list[x]):
-            msn_cesar+=abc_list[(x-n)%27]   # it's vital to think about the abc_list length
+            msn_cesar+=abc_list[(x-n)%26]   # it's vital to think about the abc_list length
             # msn_cesar+=abc_list[x+n]      # This way doesn't work well
             print ("msn_cesar --> ",msn_cesar)
             print ("va en temp:",temp)    
@@ -34,5 +34,6 @@ def cesar_des(n,message):
 
     print ("The msn_cesar is:",msn_cesar)
 
-str1="ghhsgrzplpñrxlvldpdfñrvhwrphzruñhdpv"
-cesar_des(3,str1)
+# str1="ghhsgrzplpñrxlvldpdfñrvhwrphzruñhdpv"
+str1 = "Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!"
+cesar_des(13,str1)
