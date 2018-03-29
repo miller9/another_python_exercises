@@ -18,16 +18,21 @@ def null_desencrypt(message):
 	int_list = [ message[1] for x in message ]
 
 	i = 0
+	j = 0
 	temp = ''
 	ciphred_msn = ''
 	x = message.split()
 	for word in message:
-		if (message[i] != ''):
-			# temp = temp + message[i]
-			ciphred_msn = ciphred_msn + message[1]
-			print ('lista va en : ', ciphred_msn)
-		else:
+		if (message[i] != ','):
+			temp = temp + message[i]
+#			ciphred_msn = ciphred_msn + message[1]
+#			print ('lista va en : ', ciphred_msn)
+		else: # (message[i] == ','):
+			ciphred_msn = ciphred_msn + temp[1] 
 			i += 1
+			temp = ''
+		j += 1
+
 	
 	print ('temp is: ', temp)
 			# list_1.append()
