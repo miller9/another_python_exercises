@@ -40,6 +40,8 @@ def null_desencrypt(message):
 			# list_1.append()
 	print ()
 	print ('x is: ', x)
+	print ()
+	print ('ciphred_msn is:', ciphred_msn)
 
 	print ('')
 
