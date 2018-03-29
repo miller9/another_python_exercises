@@ -22,10 +22,10 @@ def null_desencrypt(message):
 	temp = ''
 	ciphred_msn = ''
 	x = message.split()
-	for word in message:
-		if (message[i] != ','):
-			temp = temp + message[i]
-			i += 1
+	for word in x:
+		if (x[i] != ','):
+			temp = temp + x[i][1]
+
 #			ciphred_msn = ciphred_msn + message[1]
 #			print ('lista va en : ', ciphred_msn)
 		else: # (message[i] == ','):
@@ -34,7 +34,8 @@ def null_desencrypt(message):
 			ciphred_msn = ciphred_msn + a
 			temp = ''
 			a = ''
-		j += 1
+		i += 1
+	j += 1
 
 	
 	print ('temp is: ', temp)
