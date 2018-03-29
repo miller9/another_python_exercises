@@ -25,8 +25,6 @@ def null_desencrypt(message):
 	for word in x:
 		if (x[i] != ','):
 			temp = temp + x[i][1]
-
-#			ciphred_msn = ciphred_msn + message[1]
 		else: # (message[i] == ','):
 			temp = temp + ' '
 			a = ''
