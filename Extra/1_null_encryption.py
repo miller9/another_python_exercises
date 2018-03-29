@@ -20,8 +20,8 @@ def null_desencrypt(message):
 	i = 0
 	temp = ''
 	ciphred_msn = ''
+	x = message.split()
 	for word in message:
-		x = message.split()
 		if (message[i] != ''):
 			# temp = temp + message[i]
 			ciphred_msn = ciphred_msn + message[1]
